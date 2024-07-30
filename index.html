@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Калькулятор стоимости</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <h1 class="title">Калькулятор вартості</h1>
+        <p class="form">
+          <div class="form__items">
+            <h2 class="form__item-title">Виберіть складність роботи:</h2>
+            <div class="form__items-el">
+              <label class="form__item">
+                <input
+                  class="form__item-input form__item-input-3000"
+                  type="radio"
+                  name="radio"
+                />
+                <div class="form__item-element">
+                  <h3 class="form__item-text">Проста</h3>
+                  <h4 class="form__text-subtitle">3000грн м<sup>2</sup></h4>
+                  <img class="form__item-img" src="img/item1.png" alt="img" />
+                  <button class="form__item-btn form__item-btn-one" type="submit"><span class="form__item-span">Приклади робіт</span></button>
+                </div>
+              </label>
+              <label class="form__item">
+                <input
+                  class="form__item-input form__item-input-6000"
+                  type="radio"
+                  name="radio"
+                  checked
+                />
+                <div class="form__item-element">
+                  <h3 class="form__item-text">Середня</h3>
+                  <h4 class="form__text-subtitle">6000грн м<sup>2</sup></h4>
+                  <img class="form__item-img" src="img/item2.png" alt="img" />
+                  <button class="form__item-btn form__item-btn-two"><span class="form__item-span">Приклади робіт</span></button>
+                </div>
+              </label>
+              <label class="form__item">
+                <input
+                  class="form__item-input form__item-input-9000"
+                  type="radio"
+                  name="radio"
+                />
+                <div class="form__item-element">
+                  <h3 class="form__item-text">Складна</h3>
+                  <h4 class="form__text-subtitle">9000грн м<sup>2</sup></h4>
+                  <img class="form__item-img" src="img/item3.png" alt="img" />
+                  <button class="form__item-btn form__item-btn-three"><span class="form__item-span">Приклади робіт</span></button>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="form__items form__items-p">
+            <h2 class="form__item-title">Площа:</h2>
+            <input
+              class="form__number"
+              type="number"
+              min="0"
+              max="400"
+              value="30"
+            />
+            <div class="form__item-numberspandiv"><span class="form__item-numberspan">м<sup>2</sup></span></div>
+            <input
+              class="form__range"
+              type="range"
+              min="0"
+              max="400"
+              value="30"
+              step="1"
+            />
+          </div>
+
+          <input class="form__checkbox" type="checkbox" />
+          Отримати для площі більше 100м
+          <span class="form__checkbox-span">знижку 20%</span>
+      
+
+          <div class="form__info">
+            <p class="form__info-text">
+              * Матеріали оплачуються окремо
+            </p>
+          </div>
+
+          <div class="form__calc-price">
+            <div class="form__calc-price-title">Вартість:</div>
+            <div class="form__calc-price-value">
+                <span class="form__total-price">0</span> гривень
+                <div class="form__total-price--checkbox"></div>
+            </div>
+          </div>
+        </form>
+     
+
+<!--pop-up 1-->
+      <div class="pop-up pop-up-one">
+        <span class="pop-up__close pop-up__close-one">X</span>
+       <div class="pop-up__item">
+        <img class="pop-up__img" src="./img/1-1.jpg" alt="img">
+       </div>
+       <div class="pop-up__item">
+        <img class="pop-up__img" src="./img/1-2.jpg" alt="img">
+       </div>
+       <div class="pop-up__item">
+         <img class="pop-up__img" src="./img/1-3.png" alt="img">
+       </div>
+       <div class="pop-up__item none">
+        <img class="pop-up__img" src="./img/1-4.jpg" alt="img">
+       </div>
+       <div class="pop-up__item none">
+        <img class="pop-up__img" src="./img/1-5.jpg" alt="img">
+       </div>
+       <div class="pop-up__item none">
+        <img class="pop-up__img" src="./img/1-6.webp" alt="img">
+      </div>
+     </div>
+<!--end pop-up 1-->
+
+<!--pop-up 2-->
+    <div class="pop-up pop-up-two">
+      <span class="pop-up__close pop-up__close-two">X</span>
+     <div class="pop-up__item">
+      <img class="pop-up__img" src="./img/2-1.jpeg" alt="img">
+     </div>
+     <div class="pop-up__item">
+      <img class="pop-up__img" src="./img/2-2.webp" alt="img">
+     </div>
+     <div class="pop-up__item">
+       <img class="pop-up__img" src="./img/2-3.jpg" alt="img">
+     </div>
+     <div class="pop-up__item none">
+      <img class="pop-up__img" src="./img/2-4.jpg" alt="img">
+     </div>
+     <div class="pop-up__item none">
+      <img class="pop-up__img" src="./img/2-5.jpg" alt="img">
+     </div>
+     <div class="pop-up__item none">
+      <img class="pop-up__img" src="./img/2-6.jpg" alt="img">
+    </div>
+   </div>
+<!--end pop-up 2-->
+
+<!--pop-up 3-->  
+      <div class="pop-up pop-up-three">
+        <span class="pop-up__close pop-up__close-three">X</span>
+       <div class="pop-up__item">
+        <img class="pop-up__img" src="./img/3-1.jpg" alt="img">
+       </div>
+       <div class="pop-up__item">
+        <img class="pop-up__img" src="./img/3-2.jpeg" alt="img">
+       </div>
+       <div class="pop-up__item">
+         <img class="pop-up__img" src="./img/3-3.jpeg" alt="img">
+       </div>
+       <div class="pop-up__item none">
+        <img class="pop-up__img" src="./img/3-4.webp" alt="img">
+       </div>
+       <div class="pop-up__item none">
+        <img class="pop-up__img" src="./img/3-5.jpg" alt="img">
+       </div>
+       <div class="pop-up__item none">
+        <img class="pop-up__img" src="./img/3-6.jpg" alt="img">
+      </div>
+     </div>
+   
+<!--end pop-up 3-->
+     </div>
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
